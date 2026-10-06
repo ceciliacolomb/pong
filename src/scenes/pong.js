@@ -12,13 +12,10 @@ function preload(s) {}
 function create(s) {
     racchetta_sx = PP.shapes.rectangles_add(s,
         MARGINE, ALTEZZA / 2, L_RACCHETTA, A_RACCHETTA, BIANCO, 1);
-        "0xFFFFFF", 1);
-    PP.shapes.rectangles_add(s,
-        1240, 360, 20, 120,
-        "0xFFFFFF", 1);
-    PP.shapes.rectangles_add(s,
-        640, 360, 1280, 20,
-        "0xFFFFFF", 1);
+    racchetta_dx = PP.shapes.rectangles_add(s,
+        LARGHEZZA - MARGINE, ALTEZZA / 2, L_RACCHETTA, A_RACCHETTA, BIANCO, 1);
+    pallina = PP.shapes.rectangles_add(s,
+        LARGHEZZA / 2, ALTEZZA / 2, L_PALLINA, L_PALLINA, BIANCO, 1);
 }
 
 function update(s) {}
